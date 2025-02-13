@@ -1,0 +1,45 @@
+:root {
+    --primary: #cfb02c;
+    --secondary: #c5c5c5;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.main-menu {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+.menu-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    font-size: 20px;
+    padding: 0;
+}
+
+.customer-section {
+    display: flex;
+    width: 25%;
+    gap: 24px;
+}
+
+.btn {
+    border-radius: 24px;
+    border: none;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
