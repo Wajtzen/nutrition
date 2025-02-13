@@ -6,15 +6,16 @@
 }
 
 .main-menu {
-    width: 80%;
+    width: 50%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
     width: 25%;
+    padding-right: 10%;
+    margin: 0 5% 0 -15%;
 }
 
 .logo img {
@@ -27,8 +28,39 @@
     list-style: none;
     gap: 24px;
     font-size: 20px;
-    padding: 0;
+    padding: 0 50px;
+    justify-content: space-between;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-left: 7%;
+
+
 }
+
+.ho:hover {
+    text-decoration: underline;
+    text-decoration-color: #cfb02c;
+    text-underline-offset: 8px;
+}
+
+.ab:hover {
+    text-decoration: underline;
+    text-decoration-color: #cfb02c;
+    text-underline-offset: 8px;
+}
+
+.pa:hover {
+    text-decoration: underline;
+    text-decoration-color: #cfb02c;
+    text-underline-offset: 8px;
+}
+
+.co:hover {
+    text-decoration: underline;
+    text-decoration-color: #cfb02c;
+    text-underline-offset: 8px;
+}
+
 
 .customer-section {
     display: flex;
@@ -36,10 +68,112 @@
     gap: 24px;
 }
 
-.btn {
+.main-menu-btn {
     border-radius: 24px;
     border: none;
-    padding: 14px;
+    padding: 1.5% 5%;
     text-transform: uppercase;
+    background-color: #cfb02c;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+.main-menu-btn:hover {
+    background-color: rgba(2, 46, 32, 0.34);
+}
+
+.cart-icon{
+    color: black;
+    cursor: pointer;
+    padding-right: 40px;
+    margin-left: 15%;
+}
+
+.nadpis {
+    text-align: center;
+}
+
+.nadpis h1 {
+    font-size: 50px;
+    padding-top: 3%;
+}
+
+.nadpis p {
+    font-size: 23px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpolygon points='8,12 2,4 14,4' fill='black'/%3E%3C/svg%3E") no-repeat right 10px center;
+    background-size: 16px;
+    padding-left: 9px;
+    width: 240px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 45px;
+    font-size: 16px;
+    margin-left: 20%;
+    margin-top: 1%;
+    }
+
+.nabidka {
+    display: flex;
+    margin: 4%;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    gap: 4%;
+}
+
+.nabidka img {
+
+}
+
+.nabidka p {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.price-container {
+    gap: 10px;
+    font-size: 18px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.new-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+.nabidka button {
+    border-style: solid;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    padding: 12px 24px 12px 24px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 20px auto 0;
+    border-color: #cfb02c;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nabidka button:hover {
+    background-color: #cfb02c;
 }
 
