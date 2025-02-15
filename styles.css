@@ -16,6 +16,7 @@
     margin: auto;
     display: flex;
     align-items: center;
+
 }
 
 .logo {
@@ -39,8 +40,6 @@
     cursor: pointer;
     white-space: nowrap;
     margin-left: 7%;
-
-
 }
 
 .hover1:hover {
@@ -357,4 +356,37 @@ select {
 
 .hover3:hover {
     filter: brightness(85%);
+}
+
+@media (max-width: 768px) {
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .main-menu-btn {
+        margin-top: 10px;
+    }
+
+    .nabidka {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .free-ebook {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .bottom {
+        height: 50%;
+    }
 }
