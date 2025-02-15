@@ -1,3 +1,9 @@
+.body {
+    font-family: Roboto,Arial,"sans-serif";
+    margin: 0;
+}
+
+
 :root {
     --primary: #cfb02c;
     --secondary: #c5c5c5;
@@ -37,30 +43,11 @@
 
 }
 
-.ho:hover {
+.hover1:hover {
     text-decoration: underline;
-    text-decoration-color: #cfb02c;
+    text-decoration-color: var(--primary);
     text-underline-offset: 8px;
 }
-
-.ab:hover {
-    text-decoration: underline;
-    text-decoration-color: #cfb02c;
-    text-underline-offset: 8px;
-}
-
-.pa:hover {
-    text-decoration: underline;
-    text-decoration-color: #cfb02c;
-    text-underline-offset: 8px;
-}
-
-.co:hover {
-    text-decoration: underline;
-    text-decoration-color: #cfb02c;
-    text-underline-offset: 8px;
-}
-
 
 .customer-section {
     display: flex;
@@ -73,8 +60,8 @@
     border: none;
     padding: 1.5% 5%;
     text-transform: uppercase;
-    background-color: #cfb02c;
-    color: white;
+    background-color: var(--primary);
+    color: var(--white);
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
@@ -84,11 +71,11 @@
 }
 
 .main-menu-btn:hover {
-    background-color: rgba(2, 46, 32, 0.34);
+    background-color: #6f8f8b;
 }
 
 .cart-icon{
-    color: black;
+    color: var(--black);
     cursor: pointer;
     padding-right: 40px;
     margin-left: 15%;
@@ -111,11 +98,11 @@ select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpolygon points='8,12 2,4 14,4' fill='black'/%3E%3C/svg%3E") no-repeat right 10px center;
+    background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpolygon points='8,12 2,4 14,4' fill='black'/%3E%3C/svg%3E") no-repeat right 10px center;
     background-size: 16px;
     padding-left: 9px;
     width: 240px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--secondary);
     border-radius: 5px;
     cursor: pointer;
     height: 45px;
@@ -149,31 +136,225 @@ select {
 
 .old-price {
     text-decoration: line-through;
-    color: gray;
+    color: var(--secondary);
 }
 
 .new-price {
     font-size: 22px;
     font-weight: bold;
-    color: black;
+    color: var(--black);
 }
 
 .nabidka button {
     border-style: solid;
     text-transform: uppercase;
     font-size: 14px;
-    color: black;
+    color: var(--black);
     padding: 12px 24px 12px 24px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     margin: 20px auto 0;
-    border-color: #cfb02c;
-    background-color: white;
+    border-color: var(--primary);
+    background-color: var(--white);
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .nabidka button:hover {
-    background-color: #cfb02c;
+    background-color: var(--primary);
 }
 
+.free-ebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 50px;
+    height: 480px;
+    background: #344742;
+    position: relative;
+    top: 0;
+}
+
+.left-side img {
+    height: 384px;
+    width: 320px;
+}
+
+.right-side {
+    margin-top: -20px;
+    color: var(--white);
+    max-width: 530px;
+
+}
+
+.right-side h2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.right-side p {
+    font-size: 20px;
+}
+
+.right-side a {
+    color: var(--white);
+    #text-decoration: none;
+    font-size: 20px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.ebook-sub {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.ebook-sub input {
+    padding: 20px 18px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    width: 280px;
+    outline: none;
+
+}
+
+.ebook-sub button {
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    padding: 20px 60px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ebook-sub button:hover {
+    background-color: #6f8f8b;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    height: 250px;
+    background: #293330;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.bottom-one img {
+    width: 210px;
+    height: 30px;
+    margin-top: 42px;
+}
+
+.facebook {
+    color: var(--primary);
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.twitter {
+    color: var(--primary);
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.instagram {
+    color: var(--primary);
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.bottom-two ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    font-size: 22px;
+}
+
+.bottom-two ul li {
+    margin: 5px 0 0 0;
+}
+
+.bottom-two ul li a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.bottom-three ul {
+    list-style: none;
+    padding: 0;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bottom-three ul li {
+    margin: 5px 0 0 0;
+
+}
+
+.bottom-three ul li a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.newsletter input {
+    padding: 14px 20px 14px 16px;
+    width: 76%;
+    border-radius: 30px;
+    border: none;
+    margin-top: -20px;
+}
+
+.newsletter button {
+    margin-top: 12px;
+    font-size: 18px;
+    padding: 14px 20px 14px 16px;
+    width: 88%;
+    background: var(--primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.newsletter button:hover {
+    background-color: #6f8f8b;
+}
+
+.bottom h3 {
+    font-size: 26px;
+}
+
+.bottom-four p {
+    font-size: 18px;
+}
+
+.hover2:hover {
+    filter: brightness(90%);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: var(--primary);
+}
+
+.hover3:hover {
+    filter: brightness(85%);
+}
